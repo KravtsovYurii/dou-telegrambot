@@ -1,10 +1,14 @@
 # Release Notes
 
-## 0.1.0-SNAPSHOT
+## 0.3.0-SNAPSHOT
 
-* added stub telegram bot
-* added SpringBoot skeleton project
+*   DTB-13: added deployment process to the project
 
 ## 0.2.0-SNAPSHOT
 
-* implemented Command pattern for handling Telegram Bot commands
+*   DTB-3: implemented Command pattern for handling Telegram Bot commands
+
+## 0.1.0-SNAPSHOT
+
+*   DTB-2: added stub telegram bot
+*   DTB-0: added SpringBoot skeleton project
