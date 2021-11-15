@@ -3,6 +3,7 @@ package com.github.KravtsovYurii.dtb.command;
 import com.github.KravtsovYurii.dtb.bot.DouTelegramBot;
 import com.github.KravtsovYurii.dtb.service.SendBotMessageService;
 import com.github.KravtsovYurii.dtb.service.SendBotMessageServiceImpl;
+import com.github.KravtsovYurii.dtb.service.TelegramUserService;
 import org.junit.jupiter.api.Test;
 import org.mockito.Mockito;
 import org.telegram.telegrambots.meta.api.methods.send.SendMessage;
@@ -14,6 +15,7 @@ abstract class AbstractCommandTest {
 
     protected DouTelegramBot douTelegramBot = Mockito.mock(DouTelegramBot.class);
     protected SendBotMessageService sendBotMessageService = new SendBotMessageServiceImpl(douTelegramBot);
+    protected TelegramUserService telegramUserService = Mockito.mock(TelegramUserService.class);
 
     abstract String getCommandName();
 
